@@ -1,0 +1,113 @@
+<html>
+	<head>
+		<title>louka.io — Home</title>
+		<script src="https://kit.fontawesome.com/42364daefc.js" crossorigin="anonymous"></script>
+		<link href="https://fonts.googleapis.com/css?family=Permanent+Marker|Raleway&display=swap" rel="stylesheet"> 
+		<style>
+
+			#CenterElements
+			{
+				position: absolute;
+				transform: translate(-50%, -50%);
+				left: 50%;
+				top: 50%;
+			}
+
+			#CenterTitle
+			{
+				font-size: 48px;
+				font-family: 'Permanent Marker', cursive;
+			}
+
+			#CenterLinks
+			{
+				display: flex;
+				flex-direction: row;
+				justify-content: space-around;
+				align-items: center;
+				font-size: 24px;
+			}
+
+			#CenterText
+			{
+				font-family: 'Raleway', sans-serif;
+			}
+
+			a
+			{
+				text-decoration: none;
+			}
+
+			p.CenterLinkDisabled
+			{
+				color: #073642;
+			}
+
+			a.CenterLink
+			{
+				color: #93a1a1;
+				transition: all .4s
+			}
+
+			a.CenterLink:hover
+			{
+				color: rgb(255, 255, 255);
+				transform: scale(1.3);
+			}
+
+			a.SubtitleLink
+			{
+				transition: all .2s;
+				color: rgb(200, 200, 200);
+			}
+
+			a.SubtitleLink:hover
+			{
+				color: rgb(255, 255, 255);
+			}
+
+			#SynapseLink
+			{
+				position: absolute;
+				text-align: center;
+				font-family: 'Raleway', sans-serif;
+				transform: translateX(-50%);
+				left: 50%;
+				top: 60%;
+			}
+
+			#Cross
+			{
+				color: #93a1a1;
+				position: absolute;
+				text-align: center;
+				transform: translateX(-50%);
+				left: 50%;
+				top: 80%;
+			}
+
+			body
+			{
+				color: #93a1a1;
+				background-color: #002b36;
+				margin: 0;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="CenterElements">
+			<div id="CenterTitle">Louka M. B.</div>
+			<div id="CenterLinks">
+				<a class="CenterLink" href="https://github.com/LoukaMB" title="GitHub" target="_blank"><i class="fas fa-code-branch"></i></a>
+				<a class="CenterLink" href="https://hackerone.com/loukamb" title="HackerOne" target="_blank"><i class="fas fa-hat-cowboy"></i></a>
+				<a class="CenterLink" href="https://twitter.com/ntrqq" title="Twitter" target="_blank"><i class="fab fa-twitter"></i></a>
+				<a class="CenterLink" href="https://medium.com/@Louka" title="Medium" target="_blank"><i class="fab fa-medium-m"></i></a>
+				<p title="My e-mail is NOT for Synapse X-related queries. Since too much people contacted me about Synapse X, I disabled access to my e-mail. If you e-mail me about Synapse X, you WILL be ignored." class="CenterLinkDisabled"><i class="far fa-envelope"></i></p>
+			</div>
+		</div>
+		<div id="SynapseLink">
+			Looking for <a class="SubtitleLink" href="https://x.synapse.to">Synapse X</a>?
+		</div>
+		<a id="Cross" href="https://www.youtube.com/watch?v=_LHIfHoQ0UI" target="_blank"><i class="fas fa-cross"></i></a>
+	</body>
+</html>
