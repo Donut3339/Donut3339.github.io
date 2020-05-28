@@ -10,33 +10,18 @@
 	font-size: 48px;
 	font-family: 'Permanent Marker', cursive;
 }
+
+#Logo
+{
+	font-size: 37px;
+	font-family: 'Permanent Marker', cursive;
+	margin: 20px;
+}
+
 body 
 {
 	color: #93a1a1;
 	background-color: #002b36;
 	margin: 0;
 	padding: 0;
-}
-
-ul
-{
-	margin: 0;
-	padding: 0;
-	list-style-type: none;
-	font-size: 30px;
-	font-family: 'Permanent Marker', cursive;
-}
-
-li
-{
-	display: inline-block;
-	margin: 15px;
-}
-logo
-{
-	margin: 15px;
-	padding: 0;
-	list-style-type: none;
-	font-size: 30px;
-	font-family: 'Permanent Marker', cursive;
 }
