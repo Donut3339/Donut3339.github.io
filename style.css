@@ -21,6 +21,16 @@
 	color: #93a1a1;
 }
 
+#TopBar
+{
+	font-size: 20px;
+	font-family: 'Permanent Marker', cursive;
+	margin: 10px 10px 5px;
+	padding: 10px;
+	text-decoration: none;
+	color: #93a1a1;
+}
+
 body 
 {
 	color: #93a1a1;
