@@ -1,40 +1,23 @@
-#CenterElements
-{
-	position: absolute;
-	transform: translate(-50%, -50%);
-	left: 50%;
-	top: 50%;
-}
-#CenterTitle
-{
-	font-size: 48px;
-	font-family: 'Permanent Marker', cursive;
-}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
-#Logo
-{
-	font-size: 30px;
-	font-family: 'Permanent Marker', cursive;
-	margin: 10px 5px 5px;
-	padding: 0px;
-	text-decoration: none;
-	color: #93a1a1;
-}
-
-#Topbar
-{
-	font-size: 20px;
-	font-family: 'Permanent Marker', cursive;
-	margin: 10px 10px 5px;
-	padding: 0px;
-	text-decoration: none;
-	color: #93a1a1;
-}
-
-body 
-{
-	color: #93a1a1;
-	background-color: #002b36;
+* {
+	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
+	background-color: #24252A;
+}
+
+li, a, button {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 500;
+	font-size: 10px;
+	color: #edf0f1;
+	text-decoration: none;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 30px 10%;
 }
