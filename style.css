@@ -17,7 +17,7 @@ li, a, button
 	text-decoration: none;
 }
 
-div span
+div, span
 {
 	position: absolute;
 	display: block;
@@ -36,11 +36,11 @@ div span
 		transform: rotate(360deg);
 	}
 }
-div span:nth-child(even)
+div, span:nth-child(even)
 {
 	background: #2f2f2f;
 }
-div span:nth-child(even):before
+div, span:nth-child(even):before
 {
 	content: '';
 	position: absolute;
@@ -51,7 +51,7 @@ div span:nth-child(even):before
 	background: #fff;
 	transform: translateY(-50%);
 }
-div span:nth-child(even):after
+div, span:nth-child(even):after
 {
 	content: '';
 	position: absolute;
