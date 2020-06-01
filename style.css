@@ -25,29 +25,39 @@ header
 	padding: 20px 10%;
 }
 
+nav 
+{
+	order: 1;
+}
+
 .logo 
 {
 	cursor: pointer;
 }
 
-.nav_links 
+.nav__links 
 {
 	display: none;
 }
 
-.nav_links li {
+.nav__links li {
 	display: inline-block;
 	padding: 0px 20px;
 }
 
-.nav_links li a 
+.nav__links li a 
 {
 	transition: all 0.3s ease 0s;
 }
 
-.nav_links li a:hover 
+.nav__links li a:hover 
 {
 	color: #0088a9
+}
+
+.cta
+{
+	order: 2;
 }
 
 button 
