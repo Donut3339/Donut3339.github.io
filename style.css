@@ -18,65 +18,12 @@ li, a, button
 	align-items: center;
 }
 
-div, span
-{
-	position: absolute;
-	display: block;
-	background: #fff;
-	animation: animate 12s ease-in-out infinite;
-}
-
-@keyframe animate
-{
-	0%,100%
-	{
-		transform: rotate(0deg);
-	}
-	50%
-	{
-		transform: rotate(360deg);
-	}
-}
-
-div, span:nth-child(even)
-{
-	background: #2f2f2f;
-}
-
-div, span:nth-child(even):before
-{
-	content: '';
-	position: absolute;
-	top: 50%;
-	left: 0;
-	width: 100%;
-	height: 50%;
-	background: #fff;
-	transform: translateY(-50%);
-}
-div, span:nth-child(even):after
-{
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 50%;
-	width: 50%;
-	height: 100%;
-	background: #fff;
-	transform: translateY(-50%);
-}
-
 header 
 {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	padding: 20px 10%;
-}
-
-nav 
-{
-	order: 1;
 }
 
 .logo 
@@ -104,12 +51,8 @@ nav
 	color: #0088a9
 }
 
-.cta
+button 
 {
-	order: 2;
-}
-
-button {
 	padding: 9px 25px;
 	background-color: rgba(0,136,169,1);
 	border: none;
@@ -118,6 +61,7 @@ button {
 	transition: all 0.3s ease 0s;
 }
 
-button:hover {
+button:hover 
+{
 	background-color: rgba(0,136,169,0.8);
 }
