@@ -15,6 +15,7 @@ li, a, button
 	font-size: 10px;
 	color: #edf0f1;
 	text-decoration: none;
+	align-items: center;
 }
 
 div, span
@@ -36,10 +37,12 @@ div, span
 		transform: rotate(360deg);
 	}
 }
+
 div, span:nth-child(even)
 {
 	background: #2f2f2f;
 }
+
 div, span:nth-child(even):before
 {
 	content: '';
