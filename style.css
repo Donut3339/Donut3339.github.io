@@ -50,7 +50,7 @@ nav
 	transition: all 0.3s ease 0s;
 }
 
-.nav__links li a:hover 
+.nav__links, li, a:hover 
 {
 	color: #0088a9
 }
