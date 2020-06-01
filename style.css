@@ -74,3 +74,11 @@ button:hover
 {
 	background-color: rgba(0,136,169,0.8);
 }
+
+.inset-enter-active { animation: 1s inset reverse; }
+.inset-leave-active { animation: 1s inset; }
+
+@keyframes inset {
+  0% { clip-path: inset(0% round 0%); }
+  100% { clip-path: inset(50% round 50%); }
+}
