@@ -60,8 +60,7 @@ nav
 	order: 2;
 }
 
-button 
-{
+button {
 	padding: 9px 25px;
 	background-color: rgba(0,136,169,1);
 	border: none;
@@ -70,15 +69,6 @@ button
 	transition: all 0.3s ease 0s;
 }
 
-button:hover 
-{
+button:hover {
 	background-color: rgba(0,136,169,0.8);
-}
-
-.inset-enter-active { animation: 1s inset reverse; }
-.inset-leave-active { animation: 1s inset; }
-
-@keyframes inset {
-  0% { clip-path: inset(0% round 0%); }
-  100% { clip-path: inset(50% round 50%); }
 }
