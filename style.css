@@ -40,12 +40,12 @@ nav
 	display: none;
 }
 
-.nav__links li {
+.nav__links, li {
 	display: inline-block;
 	padding: 0px 20px;
 }
 
-.nav__links li a 
+.nav__links, li, a 
 {
 	transition: all 0.3s ease 0s;
 }
