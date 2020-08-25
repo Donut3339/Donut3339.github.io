@@ -1,6 +1,25 @@
 <!DOCTYPE html>
 <html>
-	<head></head>
+	<head>
+		<meta charset="utf-8">
+		<title>Linkvertise Grabber</title>
+		<!--<link rel="icon" href="">-->
+		<script>
+			try{
+				function start() {
+					url = document.getElementById("url").value
+					document.getElementById("bypassbutton").innerHTML = "Bypassing..."
+					document.getElementById("output1").innerHTML = ""
+					bypass(url)
+				}
+
+				function bypass() {
+					try{
+						urlobj = new URL(url)
+					}
+				}
+			}
+	</head>
 	<body>
 		<h1>Hello World</h1>
 	</body>
