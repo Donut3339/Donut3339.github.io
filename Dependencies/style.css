@@ -3,14 +3,15 @@
 body
 {
     background-color: #292929;
-    color: #707070;
+    color: #ffffff;
     margin: 0;
 }
 
 #BarTitle
 {
+    color: #93a1a1;
     font-size: 28px;
     font-family: 'Permanent Marker', cursive;
-    cursor: pointer;
     text-decoration: none;
+    cursor: pointer;
 }
