@@ -38,7 +38,32 @@
 
 			.nav__links {
 				display: none;
-				align-items: center;
+			}
+
+			.nav__links, li {
+				display: inline-block;
+				padding: 0px 20px;
+			}
+
+			.nav__links, li, a {
+				transition: all 0.3s ease 0s;
+			}
+
+			.nav__links, li, a:hover {
+				color: #0088a9
+			}
+
+			button {
+				padding: 9px 25px;
+				background-color: rgba(0,136,169,1);
+				border: none;
+				border-radius: 50px;
+				cursor: pointer;
+				transition: all 0.3s ease 0s;
+			}
+
+			button:hover {
+				background-color: rgba(0,136,169,0.8);
 			}
 		</style>
 		<script>
@@ -87,11 +112,13 @@
 	</head>
 	<body>
 		<header>
-			<div><a id="Logo" href="#">Jexytd.io</a><script>document.getElementById("Logo").readOnly = true;</script></div>
+			<div><a id="Logo" href="#">Jexytd.io</a></div>
 			<nav>
-				<ul>
-					<li class="nav__links">
+				<ul class="nav__links">
+					<li>
 						<a href="#">Home</a>
+						<a href="#">About</a>
+						<a href="#">Features</a>
 					</li>
 				</ul>
 			</nav>
