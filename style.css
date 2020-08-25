@@ -5,12 +5,7 @@
 }
 
 body {
+    color: #93a1a1;
     background-color: #002b36;
     margin: 0;
-}
-
-h1 {
-    font-size: 32px;
-    font-family: 'Permanent Marker', cursive;
-    color: #93a1a1;
 }
