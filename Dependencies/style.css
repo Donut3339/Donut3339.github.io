@@ -4,3 +4,31 @@ body
     color: #707070;
     margin: 0;
 }
+
+#BarElements
+{
+    background: #002b36;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#LiElements
+{
+    float: left;
+}
+
+#LiElements a
+{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#LiElements a:hover 
+{
+    background-color: #003eb0;
+}
