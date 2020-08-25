@@ -70,6 +70,30 @@
 			.container {
 				position: relative;
 			}
+			.input-field {
+				position: relative;
+				height: 40px;
+				width: 100%;
+			}
+			.input-field input[type="text"] {
+				position: absolute;
+				background: transparent;
+				border: none;
+				box-shadow: none;
+				font-size: 16px;
+			}
+			.input-field label {
+				position: absolute;
+				top: 0;
+				left: 0;
+				color: #004b5e;
+				pointer-events: none;
+				display: block;
+				transition: 0.5s;
+			}
+			.input-field input[type="text"]:focus + label {
+				transform: translateY(-35);
+			}
 		</style>
 		<script>
 			try{
@@ -124,6 +148,7 @@
 		<div class="container">
 			<form>
 				<center><input type="text" id="url"></center><br>
+				<label>Paste your linkversite here</label>
 				<span></span>
 			</form>
 		</div>
