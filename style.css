@@ -11,3 +11,10 @@ body {
     background-color: #002b36;
     margin: 0;
 }
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+}
