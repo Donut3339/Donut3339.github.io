@@ -86,13 +86,45 @@
 				position: absolute;
 				top: 0;
 				left: 0;
-				color: #004b5e;
+				color: #fff;
 				pointer-events: none;
 				display: block;
 				transition: 0.5s;
 			}
-			.input-field input[type="text"]:focus + label {
+			.input-field input[type="text"]:focus + label,
+			.input-field input[type="text"]:valid + label {
 				transform: translateY(-35);
+				font-size: 14px;
+				color: #fff;
+				background: #004b5e;
+				padding: 2px 6px;
+			}
+			.input-field span {
+				position: absolute;
+				bottom: 0;
+				right: 0;
+				display: block;
+				background: #004b5e;
+				width: 100%;
+				height: 2px;
+			}
+			.input-field span:before {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background: #002b36;
+				transform: scaleX(0);
+				transform-origin: right;
+				transition: transform 0.5s ease-in-out;
+			}
+			.input-field input[type="text"]:focus ~ span:before,
+			.input-field input[type="text"]:valid ~ span:before {
+				transform: scaleX(1);
+				transform-origin: left;
+				transition: transform 0.5s ease-in-out;
 			}
 		</style>
 		<script>
@@ -147,9 +179,11 @@
 		<h3><center>Put the linkvertise link that you want to be bypassed inside the textbox. Then press the Bypass Linkvertise button.</center><br></h3>
 		<div class="container">
 			<form>
-				<center><input type="text" id="url"></center><br>
-				<label>Paste your linkversite here</label>
-				<span></span>
+				<div calss="input-field">
+					<center><input type="text" id="url"></center><br>
+					<label>Paste your linkversite here</label>
+					<span></span>
+				</div>
 			</form>
 		</div>
 		<center><button id="bypassbutton" onclick="start()">Bypass Linkvertise</button></center><br>
