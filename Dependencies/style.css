@@ -5,30 +5,10 @@ body
     margin: 0;
 }
 
-#BarElements
+#BarTitle
 {
-    background: #002b36;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
-
-#LiElements
-{
-    float: left;
-}
-
-#LiElements a
-{
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
+    font-size: 28px;
+    font-family: 'Permanent Marker', cursive;
+    cursor: pointer;
     text-decoration: none;
-}
-
-#LiElements a:hover 
-{
-    background-color: #003eb0;
 }
