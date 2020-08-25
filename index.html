@@ -16,11 +16,39 @@
 				function bypass() {
 					try{
 						urlobj = new URL(url)
+						path = urlobj.pathname
+						let o = {
+							timestamp: new Date().getTime(),
+							random: "375123"
+						},
+						url1 = "https://linkvertise.net/api/v1/redirect/link/static" + path
+					cors = "https://cors-anywhere.herokuapp.com/"
+
+					fetch(cors + url1).then(r => r.json()).then(json => {
+						if (json && json.data.link.id) {
+							o.link_id = json.data.link.id
+							url1 = "https://linkvertise.net/api/v1/redirect/link" + path + "/target?serial=" + btoa(JSON.stringify(o))
+						}
+					}).then(() => fetch(cors + url1)).then(r => r.json()).then(json => {
+						if (json && json.data.target) {
+							yeet = json.data.target
+							document.getElementById("output1").href = yeet
+							document.getElementById("output1").innerHTML = yeet
+							document.getElementById("bypassbutton").innerHTML = "Bypass Linkvertise"
+						}
+					})
+					} catch {
+						alert("An unexpected error has occured.")
+						document.getElementById("bypassbutton").innerHTML = "Bypass Linkvertise"
 					}
 				}
+			} catch {
+				alert("An unexpected error has occured.")
+				document.getElementById("bypassbutton").innerHTML = "Bypass Linkvertise"
 			}
+		</script>
 	</head>
 	<body>
-		<h1>Hello World</h1>
+		<h1><center><b>Linkvertise Grabber</b></center></h1>
 	</body>
 </html>
