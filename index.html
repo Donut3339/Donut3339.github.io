@@ -15,6 +15,7 @@
 				padding: 0;
 				margin: 0;
 				outline: none;
+				align-items: center;
 			}
 
 			body {
@@ -127,67 +128,22 @@
 				transition: transform 0.5s ease-in-out;
 			}
 		</style>
-		<script>
-			try{
-				function start() {
-					url = document.getElementById("url").value
-					document.getElementById("bypassbutton").innerHTML = "Bypassing..."
-					document.getElementById("output1").innerHTML = ""
-					bypass(url)
-				}
-
-				function bypass() {
-					try{
-						urlobj = new URL(url)
-						path = urlobj.pathname
-						let o = {
-							timestamp: new Date().getTime(),
-							random: "375123"
-						},
-						url1 = "https://linkvertise.net/api/v1/redirect/link/static" + path
-					cors = "https://cors-anywhere.herokuapp.com/"
-
-					fetch(cors + url1).then(r => r.json()).then(json => {
-						if (json && json.data.link.id) {
-							o.link_id = json.data.link.id
-							url1 = "https://linkvertise.net/api/v1/redirect/link" + path + "/target?serial=" + btoa(JSON.stringify(o))
-						}
-					}).then(() => fetch(cors + url1)).then(r => r.json()).then(json => {
-						if (json && json.data.target) {
-							yeet = json.data.target
-							document.getElementById("output1").href = yeet
-							document.getElementById("output1").innerHTML = yeet
-							document.getElementById("bypassbutton").innerHTML = "Bypass Linkvertise"
-						}
-					})
-					} catch {
-						alert("An unexpected error has occured.")
-						document.getElementById("bypassbutton").innerHTML = "Bypass Linkvertise"
-					}
-				}
-			} catch {
-				alert("An unexpected error has occured.")
-				document.getElementById("bypassbutton").innerHTML = "Bypass Linkvertise"
-			}
-		</script>
 	</head>
 	<body>
 		<header>
 			<div><a id="Logo" href="#">Jexytd.io</a></div>
 		</header>
-		<h1><center><b>e.e</b></center></h1>
-		<h3><center>Put the linkvertise link that you want to be bypassed inside the textbox. Then press the Bypass Linkvertise button.</center><br></h3>
 		<div class="container">
+			<h2>Testing Textbox</h2>
 			<form>
 				<div calss="input-field">
-					<center><input type="text" name="" required="" id="url"></center>
-					<center><label>Paste your linkversite here</label></center>
+					<input type="text" name="" required="" id="url">
+					<label>Paste your linkversite here</label>
 					<span></span>
 				</div>
+				<input type="submit" value="Show Result" name="">
 			</form>
 		</div>
-		<center><button id="bypassbutton" onclick="start()">Bypass Linkvertise</button></center><br>
-		<center><h3>Output Link:</h3></center>
-		<center><a href="#" id="output1" class="Output1"></a></center>
+		
 	</body>
 </html>
