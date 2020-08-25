@@ -24,11 +24,21 @@
 				background: #002b36;
 				color: #93a1a1;
 			}
-			header {
-				display: flex;
-				justify-content: space-between;
-				align-items: center;
-				padding: 15px 20px;
+			.header {
+			padding: 10px 16px;
+			background: #555;
+			color: #f1f1f1;
+			}
+			.content {
+			padding: 16px;
+			}
+			.sticky {
+			position: fixed;
+			top: 0;
+			width: 100%
+			}
+			.sticky + .content {
+			padding-top: 102px;
 			}
 
 			#WebsiteName {
@@ -111,8 +121,9 @@
 	</head>
 	<body>
 		<header>
-			<a id="WebsiteName">Jexytd.io</a>
+			<div class="header" id="myHeader"></div>
 		</header>
+		
 		<div class="container">
 			<h2>How to Create Custom Input Field</h2>
 			<form>
@@ -124,5 +135,18 @@
 				<input type="submit" value="Show Result" name="">
 			</form>
 		</div>
+		<script>
+			window.onscroll = function() {myFunction()};
+			var header = document.getElementById("myHeader");
+			var sticky = header.offsetTop;
+
+			function myFunction() {
+				if (window.pageYOffset > sticky) {
+					header.classList.add("sticky");
+				} else {
+					header.classList.remove("sticky");
+				}
+			}
+		</script>
 	</body>
 </html>
