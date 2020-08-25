@@ -18,3 +18,8 @@ header {
     align-items: center;
     padding: 20px 10%;
 }
+
+#Logo {
+    font-size: 28px;
+    font-family: 'Permanent Marker', cursive;
+}
